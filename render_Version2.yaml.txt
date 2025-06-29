@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "jagx-whatsapp-bot",
+      "env": "node",
+      "plan": "free",
+      "buildCommand": "npm install && npm run build",
+      "startCommand": "npm start",
+      "envVars": [
+        { "key": "OPENAI_API_KEY", "sync": false },
+        { "key": "PORT", "value": "3000" }
+      ]
+    }
+  ]
+}
